@@ -15,7 +15,7 @@ public class TestController {
 
     @GetMapping("/test")
     public String Test() {
-        userFacade.getUserById("10086");
+        userFacade.getUserById(1);
         return "test11";
     }
 }

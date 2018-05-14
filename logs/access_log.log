@@ -3,3 +3,6 @@
 0:0:0:0:0:0:0:1 - - [14/May/2018:00:01:42 +0800] "GET /SMPAdmin/smp/test HTTP/1.1" 200 4
 0:0:0:0:0:0:0:1 - - [14/May/2018:00:01:43 +0800] "GET /SMPAdmin/smp/test HTTP/1.1" 200 4
 0:0:0:0:0:0:0:1 - - [14/May/2018:00:01:43 +0800] "GET /SMPAdmin/smp/test HTTP/1.1" 200 4
+127.0.0.1 - - [14/May/2018:14:54:01 +0800] "POST /SMPAdmin/v1/user/insert HTTP/1.1" 400 1152
+127.0.0.1 - - [14/May/2018:15:10:07 +0800] "POST /SMPAdmin/v1/user/insert HTTP/1.1" 200 84
+127.0.0.1 - - [14/May/2018:15:11:30 +0800] "POST /SMPAdmin/v1/user/insert HTTP/1.1" 200 125
