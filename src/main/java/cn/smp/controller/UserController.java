@@ -23,4 +23,8 @@ public class UserController {
     public Result insertUser(@Validated(User.INSERT.class) @RequestBody User user){
         return Result.ok(userFacade.insert(user));
     }
+
+
+
+
 }
