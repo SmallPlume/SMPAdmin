@@ -18,5 +18,10 @@ public interface UserFacade {
      */
     User findByPhone(String phone);
 
+    /**
+     * 根据用户id获取用户信息
+     * @param id
+     * @return
+     */
     User getUserById(int id);
 }
