@@ -31,30 +31,19 @@ public class refleshUtils {
         return nameValue.toString().substring(0, nameValue.toString().length() -1);
     }
 
-
-    public static void main(String[] args) {
-        /*Demo demo = new Demo();
+    /*public static void main(String[] args) {
+        *//*Demo demo = new Demo();
         demo.setAge(11);
         demo.setName("阿里巴巴");
         demo.setTime(System.currentTimeMillis());
 
         String name = getParamers(demo);
-        System.out.println(name);*/
+        System.out.println(name);*//*
 
         int[] num = {11, 56, 565, -132, 45};
 
         int min2 = IntStream.of(num).parallel().min().getAsInt();
         System.out.println(min2);
-    }
+    }*/
 
-}
-
-@Data
-class Demo{
-
-    private Integer Age;
-
-    private Long time;
-
-    private String name;
 }

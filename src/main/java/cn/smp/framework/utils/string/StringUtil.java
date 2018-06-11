@@ -175,7 +175,7 @@ public class StringUtil extends StringUtilParent {
      * @return
      */
     public static String convDateToString(Date date) {
-        Long time = new Date().getTime() - date.getTime();
+        Long time = System.currentTimeMillis() - date.getTime();
         Long min = time / 1000 / 60;
         if (min < 5) {
             return "刚刚";
@@ -462,16 +462,18 @@ public class StringUtil extends StringUtilParent {
     }
 
     public static String geneStrAry(String str, String splits) {
-        if (StringUtil.isEmpty(str))
+        if (StringUtil.isEmpty(str)) {
             return "";
+        }
         String[] ary = str.split(splits);
         StringBuffer sb = new StringBuffer("");
         for (int i = 0; i < ary.length; i++) {
             sb.append("'");
             sb.append(ary[i]);
             sb.append("'");
-            if (i < ary.length - 1)
+            if (i < ary.length - 1) {
                 sb.append(",");
+            }
         }
         return sb.toString();
     }
@@ -536,8 +538,9 @@ public class StringUtil extends StringUtilParent {
      * @return
      */
     public static String decimalFormat(Object obj) {
-        if (null == obj)
+        if (null == obj) {
             return "";
+        }
         DecimalFormat df = new DecimalFormat("0.00");
         return df.format(obj);
     }
@@ -548,8 +551,9 @@ public class StringUtil extends StringUtilParent {
      * @return
      */
     public static String decimalFormat(Object obj, String format) {
-        if (null == obj)
+        if (null == obj) {
             return "";
+        }
         DecimalFormat df = new DecimalFormat(format);
         return df.format(obj);
     }
